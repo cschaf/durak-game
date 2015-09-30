@@ -1,4 +1,4 @@
-Card = require('../../src/domain/card')
+Card = require('./card')
 module.exports = class Deck
   constructor: () ->
     @suits = ['Heart', 'Spades', 'Clubs', 'Diamonds'];
