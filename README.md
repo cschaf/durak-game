@@ -4,4 +4,6 @@
 [![Dependency Status](https://david-dm.org/cschaf/durak-game.svg)](https://david-dm.org/cschaf/durak-game)
 [![devDependency Status](https://david-dm.org/cschaf/durak-game/dev-status.svg)](https://david-dm.org/cschaf/durak-game#info=devDependencies)
 
-This is a durak  card game logic written in coffeescript while using TDD
+This is a durak  card game logic written in Coffee-Script while using TDD
+
+Testing Frameworks: Chai, Istanbul and Mocha
