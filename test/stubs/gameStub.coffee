@@ -5,7 +5,7 @@ Game = require('../../src/domain/game')
    DealTable {
      ground: [],
      pile: [],
-     trump: Card { number: '7', suit: 'Clubs' } },
+     trump: Card { number: 7, suit: 'Clubs' } },
   deck:
    Deck {
      _suits: [ 'Heart', 'Spades', 'Clubs', 'Diamonds' ],
