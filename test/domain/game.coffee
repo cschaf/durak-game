@@ -8,9 +8,6 @@ Player = require('../../src/domain/player')
 DealTable = require('../../src/domain/dealTable')
 Game = require('../../src/domain/game')
 
-test = createNewGame: () ->
-
-
 describe '#game', ->
   @game = null
   before ->
