@@ -1,12 +1,12 @@
 Card = require('./card')
 module.exports = class Deck
   constructor: () ->
-    @suits = ['Heart', 'Spades', 'Clubs', 'Diamonds'];
+    @_suits = ['Heart', 'Spades', 'Clubs', 'Diamonds'];
     @cards = []
     @_createCards()
 
   _createCards: () ->
-    for suit in @suits
+    for suit in @_suits
       for i in [6..14]
         name = i;
         if i == 11
