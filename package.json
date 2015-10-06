@@ -4,7 +4,7 @@
   "description": "a durak game logic",
   "main": "lib/index.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report cobertura --report text --report html --report lcov -- -R spec && cat ./coverage/lcov.info | coveralls && coffee --compile --output lib src",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report cobertura --report text --report html --report lcov -- -R spec && minicat ./coverage/lcov.info | coveralls && coffee --compile --output lib src",
     "clean": "rm -rf lib coverage",
     "distclean": "npm run clean && rm -rf node_modules"
   },
@@ -27,6 +27,7 @@
     "coffee-script": "^1.10.0",
     "coveralls": "^2.11.4",
     "istanbul": "^0.3.21",
+    "minicat": "^1.0.0",
     "mocha": "^2.3.3"
   }
 }
