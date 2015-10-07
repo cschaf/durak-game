@@ -34,5 +34,4 @@ describe '#game', ->
   it 'test determine first player in first round', ->
     trump = @game.dealTable.trump
     assert.notEqual(trump)
-    console.log(@game)
     # hier muss noch das game nach dem ersten Player gefragt werden

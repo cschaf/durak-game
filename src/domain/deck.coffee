@@ -1,5 +1,5 @@
 Card = require('./card')
-CardNumber= require('./cardNumber')
+CardNumber = require('./cardNumber')
 module.exports = class Deck
   constructor: () ->
     @_suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
@@ -30,3 +30,10 @@ module.exports = class Deck
           name = CardNumber.A
 
         @cards.push(new Card(name, suit))
+
+  shuffle: ()->
+    for i in [@cards.length - 1..0] by -1
+      j = Math.floor(Math.random() * (i + 1))
+      temp = @cards[i]
+      @cards[i] = @cards[j]
+      @cards[j] = temp

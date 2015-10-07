@@ -14,3 +14,10 @@ describe '#deck', ->
   it 'test DeckStub assigns on construct', ->
     deckStub = new DeckStub()
     deckStub.cards.length.should.equal 36
+
+  it 'test DeckStub should be shuffled after shuffle', ->
+    deckStub = new DeckStub()
+    deckStub.shuffle()
+    console.log(deckStub.cards)
+    assert.notEqual(deckStub.cards[0], new Card(7, 'Spades'))
+
