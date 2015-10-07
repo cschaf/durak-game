@@ -16,8 +16,8 @@ module.exports = class Game
     @_dealTable(@deck, @dealTable)
 
   _dealPlayers: (deck, players)->
-    for player in players
-      for i in [1..6]
+    for i in [1..6]
+      for player in players
         player.hand.push(deck.cards.shift())
 
   _dealTable: (deck, table) ->
