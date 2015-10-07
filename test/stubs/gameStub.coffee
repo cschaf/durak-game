@@ -1,5 +1,6 @@
 Game = require('../../src/domain/game')
-
+Card = require('../../src/domain/card')
+Deck = require('../../src/domain/deck')
 ###Game {
   dealTable:
    DealTable {
@@ -33,11 +34,4 @@ Game = require('../../src/domain/game')
   winner: null }
 ###
 class GameStub extends Game
-
   _createNewGame: () ->
-
-  _dealPlayers: (deck, players)->
-
-  _dealTable: (deck, table) ->
-
-
