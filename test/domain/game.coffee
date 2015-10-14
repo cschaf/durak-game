@@ -3,18 +3,18 @@ should = chai.should()
 assert = chai.assert
 
 Card = require('../../src/domain/card')
-Deck = require('../../src/domain/deck')
 Player = require('../../src/domain/player')
 DealTable = require('../../src/domain/dealTable')
-Game = require('../../src/domain/game')
+DeckStub = require('../../test/stubs/deckStub')
+GameStub = require('../../test/stubs/gameStub')
 
 describe '#game', ->
   @game = null
   before ->
     dealTable = new DealTable();
-    deck = new Deck()
+    deck = new DeckStub()
     players = (new Player(i) for i in [1..4])
-    @game = new Game(dealTable, deck, players)
+    @game = new GameStub(dealTable, deck, players)
 
   it 'test Game assigns on construct', ->
     @game.dealTable.trump.should.instanceOf(Card)
@@ -33,5 +33,6 @@ describe '#game', ->
 
   it 'test determine first player in first round', ->
     trump = @game.dealTable.trump
+    console.log(@game)
     assert.notEqual(trump)
     # hier muss noch das game nach dem ersten Player gefragt werden

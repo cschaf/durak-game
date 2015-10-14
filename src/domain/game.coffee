@@ -3,7 +3,7 @@ module.exports = class Game
   constructor: (@dealTable, @deck, @players) ->
     @currentTurn = []
     @started = new Date()
-    @finished = new Date()
+    @finished = new Date(0)
     @inProgress = true
     @winner = null
     @_createNewGame()
