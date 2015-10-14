@@ -18,6 +18,5 @@ describe '#deck', ->
   it 'test DeckStub should be shuffled after shuffle', ->
     deckStub = new DeckStub()
     deckStub.shuffle()
-    console.log(deckStub.cards)
     assert.notEqual(deckStub.cards[0], new Card(7, 'Spades'))
 

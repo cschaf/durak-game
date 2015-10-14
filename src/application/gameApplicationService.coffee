@@ -1,7 +1,7 @@
-Game = require('./game')
-Player = require('./player')
-DealTable = require('./dealTable')
-Deck = require('./deck')
+Game = require('../domain/game')
+Player = require('../domain/player')
+DealTable = require('../domain/dealTable')
+Deck = require('../domain/deck')
 
 module.exports = class GameApplicationService
 
